@@ -14,7 +14,7 @@ stages
     {
         steps { withAnt(installation: 'ANT_HOME', jdk: 'JAVA_HOME') 
         {
-          ant.prepare()
+          sh 'ant prepare'
         }     }
     }
 
